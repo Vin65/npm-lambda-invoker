@@ -1,0 +1,11 @@
+{
+  "name": "npm-labmda-invoker",
+  "version": "0.1.0",
+  "description": "Invoke a lambda function for a given environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": "Ramon Savinon",
+  "license": "ISC"
+}
