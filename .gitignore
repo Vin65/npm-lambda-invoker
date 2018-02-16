@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/*
+
+###
+# Test results
+###
+
+test-results.xml
+
+###
+# Coverage
+###
+
+.nyc_output
+coverage
