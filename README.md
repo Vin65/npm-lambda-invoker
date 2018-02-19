@@ -6,7 +6,7 @@
 ### `LambdaInvoker`
 * Add `const LambdaInvoker = require('npm-lambda-invoker);` to make `LambdaInvoker` constructor available to your code.
 
-* To create a new `LambdaInvoker` instance, call `new LambdaInvoker(environment, region, handler, api_version)
+* To create a new `LambdaInvoker` instance, call `new LambdaInvoker(environment, region, handler, api_version)`
 
   * environment(string): The current execution environment. Test and developement will invoke the lambda offline.
 
