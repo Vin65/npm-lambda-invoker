@@ -18,7 +18,7 @@
 
 * Using the invoke function `invoker.invoke(params, callback, offlineAttributes)`
   * params(object): Needs to have a FunctionName property with the name as string.
-  * callback(function): The invocation callback function
+  * callback(function): The invocation callback function.
   * offlineAttributes(object): Should contain the event object and the context object.
 
   The function will determine whether to invoke using the Lambda AWS SDK object or invoke offline based on the environment.
