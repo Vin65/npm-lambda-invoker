@@ -29,7 +29,7 @@ class LambdaInvoker {
   invokeOffline(params, callback, offlineAttributes) {
     let functionName = this.parseFunctionName(params.FunctionName);
     let handlerFunction = this.handler[functionName];
-    handlerFunction(offlineAttributes.event, offlineAttributes.context, callback);
+    return handlerFunction(offlineAttributes.event, offlineAttributes.context, callback);
   };
 
   parseFunctionName(functionName) {
