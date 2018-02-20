@@ -1,10 +1,10 @@
 'use strict';
 
-var _createClass = (function() { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function(Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }());
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 require('babel-polyfill');
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var AWS = require('aws-sdk');
 var offlineEnvironments = ['test', 'development'];
@@ -14,7 +14,7 @@ var loggingCallback = function loggingCallback(err, data) {
   console.log(data);
 };
 
-var LambdaInvoker = (function() {
+var LambdaInvoker = function () {
   function LambdaInvoker(environment, region, handler, apiVersion) {
     _classCallCheck(this, LambdaInvoker);
 
@@ -40,7 +40,7 @@ var LambdaInvoker = (function() {
     value: function invokeOffline(params, callback, offlineAttributes) {
       var functionName = this.parseFunctionName(params.FunctionName);
       var handlerFunction = this.handler[functionName];
-      handlerFunction(offlineAttributes.event, offlineAttributes.context, callback);
+      return handlerFunction(offlineAttributes.event, offlineAttributes.context, callback);
     }
   }, {
     key: 'parseFunctionName',
@@ -51,7 +51,7 @@ var LambdaInvoker = (function() {
   }]);
 
   return LambdaInvoker;
-}());
+}();
 
 ;
 
