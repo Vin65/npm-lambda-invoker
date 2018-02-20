@@ -23,4 +23,4 @@
 
   The function will determine weather to invoke using the Lambda AWS sdk object or invoke offline based on the environment.
 
-* Invoking offline directly `invoker.invokeOffline(params, callback, offlineAttributes`
+* Invoking offline directly `invoker.invokeOffline(params, callback, offlineAttributes)`
