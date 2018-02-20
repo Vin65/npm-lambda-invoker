@@ -21,6 +21,6 @@
   * callback(function): The invocation callback function
   * offlineAttributes(object): Should contain the event object and the context object.
 
-  The function will determine weather to invoke using the Lambda AWS sdk object or invoke offline based on the environment.
+  The function will determine whether to invoke using the Lambda AWS SDK object or invoke offline based on the environment.
 
 * Invoking offline directly `invoker.invokeOffline(params, callback, offlineAttributes)`
