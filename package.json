@@ -1,8 +1,8 @@
 {
-  "name": "npm-labmda-invoker",
+  "name": "npm-lambda-invoker",
   "version": "1.0.0",
   "description": "Invoke a lambda function for a given environment",
-  "main": "./dist/object/LambdaInvoker.js",
+  "main": "./dist/objects/LambdaInvoker.js",
   "scripts": {
     "test": "nyc --reporter=lcov mocha --recursive --require babel-polyfill --require babel-register --colors --reporter mocha-circleci-reporter test/* && codacy-coverage < ./coverage/lcov.info",
     "build": "babel src --out-dir dist"
