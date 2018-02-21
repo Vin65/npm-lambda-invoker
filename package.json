@@ -1,5 +1,5 @@
 {
-  "name": "npm-labmda-invoker",
+  "name": "npm-lambda-invoker",
   "version": "1.0.0",
   "description": "Invoke a lambda function for a given environment",
   "main": "./dist/objects/LambdaInvoker.js",
